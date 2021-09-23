@@ -1,0 +1,15 @@
+{
+  "name": "toy-browser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sudongyuer",
+  "license": "ISC",
+  "dependencies": {
+    "css": "^3.0.0",
+    "images": "^3.2.3"
+  }
+}
