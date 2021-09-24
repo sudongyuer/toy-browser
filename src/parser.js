@@ -9,7 +9,13 @@ let stack = [{ type: "document", children: [] }]; //doms树解析用的栈
 let currentTextNode=null;
 
 let rules=[];
+
+/**
+ * 添加样式规则的方法
+ * @param text
+ */
 function addCSSRules(text){
+    //调用css这个现成的库对css样式文本进行词法语法分析获取css的Ast
     var ast=css.parse(text);
     // console.log(JSON.stringify(ast,null,4));
     rules.push(...ast.stylesheet.rules);
@@ -205,22 +211,6 @@ function tagOpen(c) {
     return;
   }
 }
-
-// function endTagOpen(c){
-//     if(c.match(/^[a-zA-Z]$/)){
-//         currentToken={
-//             type:"endTag",
-//             tagName:""
-//         }
-//         return tagName(c);
-//     }else if(c == ">"){
-
-//     }else if(c==EOF){
-
-//     }else{
-
-//     }
-// }
 
 function tagName(c) {
   if (c.match(/^[\t\n\f ]$/)) {

@@ -1,4 +1,4 @@
-function findabababx(str) {
+function findStr(str) {
     let state= start;
     for (const c of str) {
         state=state(c)
@@ -57,4 +57,4 @@ function findB3(c) {
 
 
 
-console.log(findabababx('aaabxababx'))
+console.log(findStr('aaabxababx'))
