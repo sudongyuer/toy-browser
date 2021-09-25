@@ -1,6 +1,6 @@
 # toy-browser ⚡
 
-**从零到一完成一个玩具浏览器来了解浏览器渲染原理**
+**从零到一完成一个玩具浏览器了解浏览器渲染原理**
 
 
 ![infoJs](https://static01.imgkr.com/temp/d77a025e2eb14ef9857cdccf5015b9e2.png)
